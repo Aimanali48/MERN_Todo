@@ -1,0 +1,75 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.cover {
+  margin-top: 20px;
+  flex: 2;
+}
+.recipes-section {
+  flex: 3;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.cc:nth-child(even) {
+  background-color: #ccf2ff;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  border-radius: 7px;
+  padding: 1em;
+}
+.cc:nth-child(odd) {
+  background-color: #ffd699;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  border-radius: 7px;
+  padding: 1em;
+}
+
+.btn {
+  float: right;
+  color: red;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background: red;
+  color: #fff;
+}
+
+.btn-edit {
+  color: red;
+  background-color: transparent;
+  border: none;
+  float: right;
+  margin-right: 5px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.spinner {
+  position: relative;
+  left: 20rem;
+  top: 4rem;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 150px;
+  height: 150px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
