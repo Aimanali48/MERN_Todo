@@ -153,7 +153,7 @@ class Forms extends Component {
               Submit
             </button>
           </form>
-          <button onClick={() => this.handleUpdate(this.state)}>update</button>
+          <button className="btn btn-success mr-2" onClick={() => this.handleUpdate(this.state)}>update</button>
         </div>
         <div className="recipes-section">
           <Recipes
