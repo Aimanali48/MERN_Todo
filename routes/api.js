@@ -32,11 +32,16 @@ router.post("/api/data", async (req, res) => {
 });
 
 router.put("/api/data/:id", async (req, res) => {
+  let { name, rcpname, recipe } = req.body;
   try {
-    const user = User.findByIdAndUpdate({ _id: req.params.id }, req.body, {
-      new: true,
-      runValidators: true
-    });
+    const user = await User.findByIdAndUpdate(
+      { _id: req.params.id },
+      { name, rcpname, recipe },
+      {
+        new: true,
+        runValidators: true
+      }
+    );
     res.send(user);
   } catch (err) {
     console.log(`error occcured ${err}`);
