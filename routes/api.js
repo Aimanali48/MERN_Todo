@@ -52,7 +52,6 @@ router.delete("/api/data/:id", async (req, res) => {
   try {
     const user = await User.findByIdAndRemove({ _id: req.params.id });
     res.send(user).status(200);
-    res.json(user);
   } catch (err) {
     console.log(`error occcured ${err}`);
   }
