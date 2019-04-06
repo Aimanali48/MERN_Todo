@@ -27,7 +27,7 @@ class Recipes extends Component {
           return (
             <div className="cc" key={c._id}>
               <button
-                className="btn"
+                className="btn-dlt"
                 onClick={() => this.props.onDelete(c._id)}
               >
                 &times;

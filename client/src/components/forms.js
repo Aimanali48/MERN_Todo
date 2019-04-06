@@ -149,11 +149,12 @@ class Forms extends Component {
                 ref={this.recipe}
               />
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary btn-submit">
               Submit
             </button>
           </form>
           <button className="btn btn-success mr-2" onClick={() => this.handleUpdate(this.state)}>update</button>
+        
         </div>
         <div className="recipes-section">
           <Recipes

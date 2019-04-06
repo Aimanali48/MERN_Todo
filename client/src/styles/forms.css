@@ -32,14 +32,18 @@
   padding: 1em;
   height:150px;
 }
-
-.btn {
+.btn-submit {
+ float: left;
+ margin-right:0.5em;
+}
+.btn-dlt {
   float: right;
   color: red;
   background-color: transparent;
+  border: none;
 }
 
-.btn:hover {
+.btn-dlt:hover {
   background: red;
   color: #fff!important
 }
